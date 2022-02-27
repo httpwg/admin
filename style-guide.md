@@ -1,9 +1,26 @@
 
+
 # HTTP Editorial Style Guide
 
 This page collects guidance for HTTP specification editors, to promote consistency and ease of use for the document set. See also the [RFC Editor style guide](https://www.rfc-editor.org/styleguide/).
 
 **NOTE**: This guide is still in development; discuss improvements to it on the [issues list](https://github.com/httpwg/admin/labels/style-guide).
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Header and Trailer Fields](#header-and-trailer-fields)
+  - [Structured Fields](#structured-fields)
+- [Content](#content)
+- [Methods](#methods)
+- [Status Codes](#status-codes)
+- [Not HTTP Specific](#not-http-specific)
+  - [Registries](#registries)
+  - [Self-References](#self-references)
+  - [References](#references)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Header and Trailer Fields
 
