@@ -3,6 +3,7 @@
 
 This page collects guidance for HTTP specification editors, to promote consistency and ease of use for the document set. See also the [RFC Editor style guide](https://www.rfc-editor.org/styleguide/).
 
+**NOTE**: This guide is still in development; discuss improvements to it on the [issues list](https://github.com/httpwg/admin/labels/style-guide).
 
 ## Header and Trailer Fields
 
