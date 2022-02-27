@@ -26,9 +26,7 @@ This page collects guidance for HTTP specification editors, to promote consisten
 
 When defining a field, the first instance should be quoted; e.g.,
 
-~~~ markdown
-This document defines the "Foo" response header field.
-~~~
+> This document defines the "Foo" response header field.
 
 If the field is specific to headers, trailers, requests, and/or responses, the definition should include the relevant terms, as above.
 
@@ -59,36 +57,26 @@ Use 'content', not 'body'.
 
 Just use the bare method name (without quotes or emphasis); e.g.,
 
-~~~
-Send a request with the GET method.
-~~~
+> Send a request with the GET method.
 
 Stating that it is a HTTP method is optional; this is equally acceptable:
 
-~~~
-Send a GET request.
-~~~
+> Send a GET request.
 
 
 ## Status Codes
 
-Use the bare status code number, followed by the reason phrase in parenthesis. For example:
+Use the bare status code number, followed by the reason phrase in parentheses. For example:
 
-~~~
-The 500 (Internal Server Error) status code.
-~~~
+> The 500 (Internal Server Error) status code.
 
-If referring to multiple individual status codes, the reason phrase can be omitted; for example:
+When referring to multiple individual status codes, the reason phrase can be omitted; for example:
 
-~~~
-If the status code is 200, 202, or 204, proceed.
-~~~
+> If the status code is 200, 202, or 204, proceed.
 
-If referring to a range of status codes, use "xx" notation:
+To refer to a range of status codes, use "xx" notation:
 
-~~~
-The 4xx range of status codes.
-~~~
+> The 4xx range of status codes.
 
 When discussing status codes in general, the correct reference is [Section 15 of HTTP](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#status.codes). Use 'status code', not 'Status Code'.
 
@@ -101,9 +89,7 @@ The following are useful tips for reducing the amount of editing that the RPC ne
 
 When referring to an IANA registry, quote its name. For example,
 
-~~~ markdown
-The Foo header field has been registered in the "Hypertext Transfer Protocol (HTTP) Field Name Registry".
-~~~
+> The Foo header field has been registered in the "Hypertext Transfer Protocol (HTTP) Field Name Registry".
 
 Create registry entries as Definition Lists. For example,
 
