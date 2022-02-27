@@ -60,10 +60,10 @@ Use the bare status code number, followed by the reason phrase in parenthesis. F
 The 500 (Internal Server Error) status code.
 ~~~
 
-If referring to a number of status codes, the reason phrase can be omitted; for example:
+If referring to multiple individual status codes, the reason phrase can be omitted; for example:
 
 ~~~
-If the status code is 200, 202, or 204, continue.
+If the status code is 200, 202, or 204, proceed.
 ~~~
 
 If referring to a range of status codes, use "xx" notation:
