@@ -145,9 +145,9 @@ Reference
 
 ### References
 
-Generally, named references are preferred for "core" specifications like HTTP and TLS; this is a small hint that the RFC number is not the identifier they should be remembering. For example:
+Generally, named references are preferred for "core" specifications like HTTP and TLS. In addition to giving readers a cue about the purpose of the reference, this is a small hint that the RFC number is not the identifier they should be remembering. For example:
 
 ~~~ markdown
 This document defines a HTTP {{HTTP}} header field that uses the conventions
-in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS13}}) session.
+in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS}}) session.
 ~~~
