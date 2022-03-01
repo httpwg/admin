@@ -145,7 +145,7 @@ The following reference names are preferred:
 * `HTTP/1.1` - [HTTP/1.1](https://httpwg.org/http-core/draft-ietf-httpbis-messaging-latest.html)
 * `HTTP/2` - [HTTP/2](https://httpwg.org/http2-spec/draft-ietf-httpbis-http2bis.html)
 * `HTTP/3` - [HTTP/3](https://quicwg.org/base-drafts/draft-ietf-quic-http.html)
-* `STRUCTURED-FIELDS` - [Structurd Field Values for HTTP](https://httpwg.org/specs/rfc8941.html)
+* `STRUCTURED-FIELDS` - [Structured Field Values for HTTP](https://httpwg.org/specs/rfc8941.html)
 * `COOKIES` - [Cookies: HTTP State Management Mechanism](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
 * `TLS` - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
 
