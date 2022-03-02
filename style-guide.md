@@ -46,7 +46,7 @@ adjusting the terms listed as appropriate. Then, when using one of the terms, ju
 The Foo header field's value is a List of Integers.
 ~~~
 
-All references to structured types should be made to Section 3 of the Structured Fields specification, **not** Section 4.
+All references to structured types should be made to [Section 3](https://httpwg.org/specs/rfc8941.html#rfc.section.3) of the Structured Fields specification, **not** Section 4.
 
 Note that although the Structured Fields specification accommodates the use of ABNF, we do not recommend it for our specifications.
 
