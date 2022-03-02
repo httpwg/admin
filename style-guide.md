@@ -34,18 +34,21 @@ Subsequent occurrences should be unquoted, but always be followed by "field", "h
 
 ### Structured Fields
 
-Most HTTP headers defined by the Working Group should be [Structured Fields](). This isn't an official policy, but many folks argue for them. 
+Most HTTP headers defined by the Working Group should be [Structured Fields](https://httpwg.org/specs/rfc8941.html). This isn't an official policy, but many folks argue for them. 
 
-When specifying a Structured Field in prose, define it in terms of the data structures in that specification; for example:
+When specifying a Structured Field in prose, preferred practice is to add the following to your "Notational Conventions" section:
+
+> This document uses the following terminology from {{Section 3.1.1 of STRUCTURED-FIELDS}}: List, Dictionary, and Integer.
+
+adjusting the terms listed as appropriate. Then, when using one of the terms, just use the bare, capitalised term; e.g.,
 
 ~~~ markdown
-The Foo header field is a List (see {{Section 3.1 of STRUCTURED-FIELDS}} 
-of Integers (see {{Section 3.1.1 of STRUCTURED-FIELDS}}).
+The Foo header field's value is a List of Integers.
 ~~~
 
-All such references should be in Section 3 of the Structured Fields specification, **not** Section 4.
+All references to structured types should be made to Section 3 of the Structured Fields specification, **not** Section 4.
 
-Only use the ABNF rule names (e.g., `sf-list`) if defining ABNF for your field.
+Note that although the Structured Fields specification accommodates the use of ABNF, we do not recommend it for our specifications.
 
 
 ## Content
