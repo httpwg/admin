@@ -43,7 +43,7 @@ When specifying a Structured Field in prose, preferred practice is to add the fo
 adjusting the terms listed as appropriate. Then, when using one of the terms, just use the bare, capitalised term; e.g.,
 
 ~~~ markdown
-The Foo header field's value is a List of Integers.
+> The Foo header field's value is a List of Integers.
 ~~~
 
 All references to structured types should be made to [Section 3](https://httpwg.org/specs/rfc8941.html#rfc.section.3) of the Structured Fields specification, **not** Section 4.
