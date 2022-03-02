@@ -42,7 +42,6 @@ When specifying a Structured Field in prose, preferred practice is to add the fo
 
 adjusting the terms listed as appropriate. Then, when using one of the terms, just use the bare, capitalised term; e.g.,
 
-~~~ markdown
 > The Foo header field's value is a List of Integers.
 ~~~
 
