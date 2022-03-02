@@ -38,7 +38,7 @@ Most HTTP headers defined by the Working Group should be [Structured Fields](htt
 
 When specifying a Structured Field in prose, preferred practice is to add the following to your "Notational Conventions" section:
 
-> This document uses the following terminology from {{Section 3.1.1 of STRUCTURED-FIELDS}}: List, Dictionary, and Integer.
+> This document uses the following terminology from {{Section 3 of STRUCTURED-FIELDS}} to specify syntax nd parsing: List, Dictionary, and Integer.
 
 adjusting the terms listed as appropriate. Then, when using one of the terms, just use the bare, capitalised term; e.g.,
 
