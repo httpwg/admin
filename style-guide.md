@@ -149,3 +149,10 @@ The following reference names are preferred:
 * `COOKIES` - [Cookies: HTTP State Management Mechanism](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
 * `TLS` - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
 
+Note that to include `/` in an anchor name in markdown, the reference needs to be declared in the YAML header like this:
+
+~~~ yaml
+normative:
+  RFC9112:
+    display: HTTP/1.1
+~~~
