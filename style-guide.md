@@ -48,7 +48,7 @@ adjusting the terms listed as appropriate. Then, when using one of the terms, ju
 
 All references to structured types should be made to [Section 3](https://httpwg.org/specs/rfc8941.html#rfc.section.3) of the Structured Fields specification, **not** Section 4.
 
-Note that although the Structured Fields specification accommodates the use of ABNF, we do not recommend it.
+Although ABNF is defined for structured types, we do not recommend its use.
 
 
 ## Content
