@@ -11,4 +11,4 @@ defaults:
   - scope:
       path: "editors"
     values:
-        title: HTTP Editor Documentation
+      title: HTTP Editor Documentation
