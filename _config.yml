@@ -2,6 +2,7 @@
   title: HTTP Administration
   description: Administrative materials for the HTTP Working Group
   remote_theme: httpwg/theme@main
+  suppress_site: true
   titles_from_headings:
     enabled:     true
     strip_title: true
