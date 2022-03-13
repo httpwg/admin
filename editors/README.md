@@ -6,5 +6,6 @@ _The following guidlines and resources are for document editors in the HTTP Work
 * [Post-Working Group Process](process)
 * [Editorial Style Guide](style-guide)
 * [Tool and Format Recommendations](tools-formats)
+* [Registering New HTTP Protocol Elements](registries)
 
 
