@@ -14,10 +14,10 @@ This page collects guidance for HTTP specification editors, to promote consisten
 - [Content](#content)
 - [Methods](#methods)
 - [Status Codes](#status-codes)
+- [Reference Style](#reference-style)
 - [Not HTTP Specific](#not-http-specific)
-  - [Registries](#registries)
+  - [Creating and Modifying Registries](#creating-and-modifying-registries)
   - [Self-References](#self-references)
-  - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -84,11 +84,41 @@ To refer to a range of status codes, use "xx" notation:
 When discussing status codes in general, the correct reference is [Section 15 of HTTP](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#status.codes). Use 'status code', not 'Status Code'.
 
 
+## Reference Style
+
+Generally, named references are preferred for "core" specifications like HTTP and TLS. In addition to giving readers a cue about the purpose of the reference, this is a small hint that the RFC number is not the identifier they should be remembering. For example:
+
+~~~ markdown
+This document defines a HTTP {{HTTP}} header field that uses the conventions
+in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS}}) session.
+~~~
+
+The following reference names are preferred:
+
+* `HTTP` - [HTTP Semantics](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html)
+* `HTTP-CACHING` - [HTTP Caching](https://httpwg.org/http-core/draft-ietf-httpbis-cache-latest.html)
+* `HTTP/1.1` - [HTTP/1.1](https://httpwg.org/http-core/draft-ietf-httpbis-messaging-latest.html)
+* `HTTP/2` - [HTTP/2](https://httpwg.org/http2-spec/draft-ietf-httpbis-http2bis.html)
+* `HTTP/3` - [HTTP/3](https://quicwg.org/base-drafts/draft-ietf-quic-http.html)
+* `STRUCTURED-FIELDS` - [Structured Field Values for HTTP](https://httpwg.org/specs/rfc8941.html)
+* `COOKIES` - [Cookies: HTTP State Management Mechanism](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
+* `TLS` - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
+
+Note that to include `/` in an anchor name in markdown, the reference needs to be declared in the YAML header like this:
+
+~~~ yaml
+normative:
+  RFC9112:
+    display: HTTP/1.1
+~~~
+
+
+
 ## Not HTTP Specific
 
 The following are useful tips for reducing the amount of editing that the RPC needs to do, leading to cleaner diffs at the end of the process.
 
-### Registries
+### Creating and Modifying Registries
 
 When referring to an IANA registry, quote its name. For example,
 
@@ -132,30 +162,3 @@ Reference
 : {{&SELF}}
 ~~~
 
-### References
-
-Generally, named references are preferred for "core" specifications like HTTP and TLS. In addition to giving readers a cue about the purpose of the reference, this is a small hint that the RFC number is not the identifier they should be remembering. For example:
-
-~~~ markdown
-This document defines a HTTP {{HTTP}} header field that uses the conventions
-in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS}}) session.
-~~~
-
-The following reference names are preferred:
-
-* `HTTP` - [HTTP Semantics](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html)
-* `HTTP-CACHING` - [HTTP Caching](https://httpwg.org/http-core/draft-ietf-httpbis-cache-latest.html)
-* `HTTP/1.1` - [HTTP/1.1](https://httpwg.org/http-core/draft-ietf-httpbis-messaging-latest.html)
-* `HTTP/2` - [HTTP/2](https://httpwg.org/http2-spec/draft-ietf-httpbis-http2bis.html)
-* `HTTP/3` - [HTTP/3](https://quicwg.org/base-drafts/draft-ietf-quic-http.html)
-* `STRUCTURED-FIELDS` - [Structured Field Values for HTTP](https://httpwg.org/specs/rfc8941.html)
-* `COOKIES` - [Cookies: HTTP State Management Mechanism](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
-* `TLS` - [The Transport Layer Security (TLS) Protocol Version 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
-
-Note that to include `/` in an anchor name in markdown, the reference needs to be declared in the YAML header like this:
-
-~~~ yaml
-normative:
-  RFC9112:
-    display: HTTP/1.1
-~~~
