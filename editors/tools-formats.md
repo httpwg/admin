@@ -1,7 +1,18 @@
+
 # Tools and Formats
 
 _This page gives advice about tools and formats for document editors._
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Getting Started](#getting-started)
+- [Editing Formats](#editing-formats)
+- [Repo Etiquette](#repo-etiquette)
+- [CI](#ci)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+  
 **See also:**
 
 * The [Style Guide](Style-Guide)
