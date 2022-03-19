@@ -56,7 +56,7 @@ Usually, IESG evaluation results in changes to the document. When this is the ca
 
 Once your document is approved by the IESG, it will go to the [RFC Editor](https://rfc-editor.org/) for editing. This may take some time, depending on their workload, the document's complexity, and so on. When they're ready, they will contact you with an AUTH48 notice e-mail, followed by an e-mail with their comments -- usually, questions and suggestions.
 
-The chairs will create issues for each of the comments in GitHub, tagged with `auth48`. Most of these issues can be dealt with as editorial comments at your discretion, but some may need Working Group discussion.
+The chairs will create issues for each of the comments in GitHub, tagged with `auth48`. Most of these issues can be dealt with as editorial comments at your discretion, but some may need Working Group discussion. Note that these are only for tracking - the RFC Editor does not monitor these issues, and so you will need to tell them the outcomes by responding in e-mail.
 
 In addition to the changes that the RFC Editor calls out, they usually make more minor editorial changes to improve the document. These changes should be checked, because they can unintentionally change the meaning of the document, or in rare cases, introduce errors.
 
