@@ -159,6 +159,6 @@ entity:
 
 ~~~ markdown
 Reference
-: {{&SELF}}
+: \{{&SELF}}
 ~~~
 
