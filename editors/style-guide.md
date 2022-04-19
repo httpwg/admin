@@ -93,47 +93,37 @@ Examples should be in HTTP/1.1 format unless they are specific to another versio
 
 For example (in Markdown):
 
-~~~ markdown
-{% raw %}~~~ http-message
-HTTP/1.1 200 OK
-Content-Type: text/plain
-Example-Header: foo
+    ~~~ http-message
+    HTTP/1.1 200 OK
+    Content-Type: text/plain
+    Example-Header: foo
 
-[ content ]
-~~~{% endraw %}
-~~~
+    [ content ]
+    ~~~
 
-Examples with long lines (over 78 characters) should be wrapped using the [line folding convention]() where possible. For example:
+Examples with long lines (over 78 characters) should be wrapped using the line folding convention where possible. For example:
 
-~~~ markdown
-{% raw %}
-~~~ http-message
-HTTP/1.1 200 OK
-Content-Type: text/plain
-Example-Header: this content is very long so we
-   fold it to the next line and indent
+    ~~~ http-message
+    HTTP/1.1 200 OK
+    Content-Type: text/plain
+    Example-Header: this content is very long so we
+       fold it to the next line and indent
 
-[ content ]
-~~~
-{% endraw %}
-~~~
+    [ content ]
+    ~~~
 
 If the too-long content cannot include whitespace, use [RFC8792](https://www.rfc-editor.org/rfc/rfc8792.html) encoding:
 
-~~~ markdown
-{% raw %}
-~~~ http-message
-# NOTE: '\' line wrapping per RFC 8792
+    ~~~ http-message
+    # NOTE: '\' line wrapping per RFC 8792
 
-HTTP/1.1 200 OK
-Content-Type: text/plain
-Example-Header: abcedfghijlkmnopqrstuvwxyzabcedfghijlkmnopqrstuvwxyzabc\
-     edfghijlkmnopqrstuvwxyz
+    HTTP/1.1 200 OK
+    Content-Type: text/plain
+    Example-Header: abcedfghijlkmnopqrstuvwxyzabcedfghijlkmnopqrstuvwxyzabc\
+         edfghijlkmnopqrstuvwxyz
 
-[ content ]
-~~~
-{% endraw %}
-~~~
+    [ content ]
+    ~~~
 
 Note that the notice header has to occur on each section that uses this encoding.
 
