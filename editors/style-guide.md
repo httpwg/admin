@@ -85,6 +85,61 @@ To refer to a range of status codes, use "xx" notation:
 When discussing status codes in general, the correct reference is [Section 15 of HTTP](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#status.codes). Use 'status code', not 'Status Code'.
 
 
+## Example Messages
+
+If your specification has examples of HTTP messages (and it probably should), they should give enough context for readers to understand. Generally, this means showing a substantial portion of the message; e.g., not just a header field in isolation, but an entire request or response message (with a truncated body). Where appropriate, an entire exchange (request and response) can be illustrated using two subsequent example sections.
+
+Examples should be in HTTP/1.1 format unless they are specific to another version of the protocol. HTTP/1.1 examples should be labeled with the `http-message` type so that the [validator](https://github.com/mnot/rfc-http-validate) can check them.
+
+For example (in Markdown):
+
+~~~ markdown
+{% raw %}
+~~~ http-message
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Example-Header: foo
+
+[ content ]
+~~~
+{% endraw %}
+~~~
+
+Examples with long lines (over 78 characters) should be wrapped using the [line folding convention]() where possible. For example:
+
+~~~ markdown
+{% raw %}
+~~~ http-message
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Example-Header: this content is very long so we
+   fold it to the next line and indent
+
+[ content ]
+~~~
+{% endraw %}
+~~~
+
+If the too-long content cannot include whitespace, use [RFC8792](https://www.rfc-editor.org/rfc/rfc8792.html) encoding:
+
+~~~ markdown
+{% raw %}
+~~~ http-message
+# NOTE: '\' line wrapping per RFC 8792
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Example-Header: abcedfghijlkmnopqrstuvwxyzabcedfghijlkmnopqrstuvwxyzabc\
+     edfghijlkmnopqrstuvwxyz
+
+[ content ]
+~~~
+{% endraw %}
+~~~
+
+Note that the notice header has to occur on each section that uses this encoding.
+
+
 ## Reference Style
 
 Generally, named references are preferred for "core" specifications like HTTP and TLS. In addition to giving readers a cue about the purpose of the reference, this is a small hint that the RFC number is not the identifier they should be remembering. For example:
