@@ -27,7 +27,6 @@ This page collects guidance for HTTP specification editors, to promote consisten
 When defining a field, the first instance should be quoted; e.g.,
 
 > This document defines the "Foo" response header field.
-{:.blockquote}
 
 If the field is specific to headers, trailers, requests, and/or responses, the definition should include the relevant terms, as above.
 
