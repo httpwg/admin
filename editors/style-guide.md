@@ -94,15 +94,13 @@ Examples should be in HTTP/1.1 format unless they are specific to another versio
 For example (in Markdown):
 
 ~~~ markdown
-{% raw %}
-~~~ http-message
+{% raw %}~~~ http-message
 HTTP/1.1 200 OK
 Content-Type: text/plain
 Example-Header: foo
 
 [ content ]
-~~~
-{% endraw %}
+~~~{% endraw %}
 ~~~
 
 Examples with long lines (over 78 characters) should be wrapped using the [line folding convention]() where possible. For example:
