@@ -90,8 +90,8 @@ When discussing status codes in general, the correct reference is [Section 15 of
 Generally, named references are preferred for "core" specifications like HTTP and TLS. In addition to giving readers a cue about the purpose of the reference, this is a small hint that the RFC number is not the identifier they should be remembering. For example:
 
 ~~~ markdown
-This document defines a HTTP {{HTTP}} header field that uses the conventions
-in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS}}) session.
+{% raw %}This document defines a HTTP {{HTTP}} header field that uses the conventions
+in {{STRUCTURED-FIELDS}} to convey information about the TLS ({{TLS}}) session.{% endraw %}
 ~~~
 
 The following reference names are preferred:
