@@ -14,6 +14,7 @@ This page collects guidance for HTTP specification editors, to promote consisten
 - [Content](#content)
 - [Methods](#methods)
 - [Status Codes](#status-codes)
+- [Example Messages](#example-messages)
 - [Reference Style](#reference-style)
 - [Not HTTP Specific](#not-http-specific)
   - [Creating and Modifying Registries](#creating-and-modifying-registries)
