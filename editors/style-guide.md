@@ -31,6 +31,10 @@ When defining a field, the first instance should be quoted; e.g.,
 
 If the field is specific to headers, trailers, requests, and/or responses, the definition should include the relevant terms, as above.
 
+When referring to a field defined in a different document, the first instance should include a reference, and all instances should be unquoted. For example:
+
+> Add the Foo-Example header field (see {% raw %}{{RFCxxxx}}){% endraw %} to the response.
+
 Subsequent occurrences should be unquoted, but always be followed by "field", "header field", or "trailer field" as appropriate.
 
 ### Structured Fields
