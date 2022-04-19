@@ -54,7 +54,7 @@ Although ABNF is defined for structured types, we do not recommend its use.
 
 ## Content
 
-Use 'content', not 'body'.
+Use 'content', not 'body' or 'payload'.
 
 
 ## Methods
