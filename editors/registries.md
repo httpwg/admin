@@ -55,7 +55,7 @@ Like methods, new HTTP status codes are fairly rare -- not least because there
 are only a limited number of unused codes available.
 
 [Considerations for New Status
-Codes](httsp://httpwg.org/specs/rfc7231.html#considerations.for.new.status.
+Codes](https://httpwg.org/specs/rfc7231.html#considerations.for.new.status.
 codes) in RFC7231 is a good place to start for those thinking about creating a
 status code.
 
