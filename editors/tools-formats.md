@@ -15,7 +15,7 @@ _This page gives advice about tools and formats for document editors._
   
 **See also:**
 
-* The [Style Guide](Style-Guide)
+* The [Style Guide](style-guide)
 * [Post Working Group Process](https://github.com/httpwg/wiki/wiki/Editors:--Post-Working-Group-Process) guidelines
 
 ## Getting Started
