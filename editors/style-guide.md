@@ -37,6 +37,8 @@ When referring to a field defined in a different document, the first instance sh
 
 Subsequent occurrences should be unquoted, but always be followed by "field", "header field", or "trailer field" as appropriate.
 
+See also [Considerations for New Fields](https://httpwg.org/specs/rfc9110.html#considerations.for.new.fields).
+
 ### Structured Fields
 
 Most HTTP headers defined by the Working Group should be [Structured Fields](https://httpwg.org/specs/rfc8941.html). This isn't an official policy, but many folks argue for them. 
@@ -72,6 +74,8 @@ Stating that it is a HTTP method is optional; this is equally acceptable:
 
 > Send a GET request.
 
+See also [Considerations for New Methods](https://httpwg.org/specs/rfc9110.html#considerations.for.new.methods).
+
 
 ## Status Codes
 
@@ -88,6 +92,8 @@ To refer to a range of status codes, use "xx" notation:
 > The 4xx range of status codes.
 
 When discussing status codes in general, the correct reference is [Section 15 of HTTP](https://httpwg.org/http-core/draft-ietf-httpbis-semantics-latest.html#status.codes). Use 'status code', not 'Status Code'.
+
+See also [Considerations for New Status Codes](https://httpwg.org/specs/rfc9110.html#considerations.for.new.status.codes).
 
 
 ## Example Messages
