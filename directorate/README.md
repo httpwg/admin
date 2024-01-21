@@ -1,6 +1,6 @@
 # HTTP Directorate Review Guidelines
 
-Thank you for agreeing to be a reviewer for the HTTP Directorate. This document captures guidelines about how the directorate operates, and how you should approach the reviews you write.
+Thank you for agreeing to be a reviewer for the [HTTP Directorate](https://datatracker.ietf.org/group/httpdir/about/). This document captures guidelines about how the directorate operates, and how you should approach the reviews you write.
 
 ## General
 
