@@ -50,6 +50,8 @@ See [this cheatsheet](https://github.com/cabo/kramdown-rfc2629/wiki/Syntax) for 
 
 You can of course use any text editor; however, we encourage using one that supports [EditorConfig](https://editorconfig.org).
 
+See also our [style guide for HTTP specifications](style-guide).
+
 ## Repo Etiquette
 
 You can use PRs to manage your edits, or you can commit directly to the `main` branch. Please refrain from making edits to drafts other than your own, even if you feel they are helpful. Of course, you can propose changes with PRs, just as any other participant can.
