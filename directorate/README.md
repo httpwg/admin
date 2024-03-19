@@ -1,27 +1,38 @@
-# HTTP Directorate Review Guidelines
+# HTTP Directorate
 
-Thank you for agreeing to be a reviewer for the [HTTP Directorate](https://datatracker.ietf.org/group/httpdir/about/). This document captures guidelines about how the directorate operates, and how you should approach the reviews you write.
+_Nearby: [reviewer guidelines](guidelines)_
 
-## General
+The HTTP Directorate reviews documents proposed for publication in the RFC Series with a focus on how the HTTP protocol is used.
 
-HTTP directorate reviews should usually happen early in the lifetime of a draft, to give authors ample time to correct issues before they get any deployment and are more difficult to change.
+Its reviewers aim to:
 
-IETF stream documents that specify extensions to HTTP or applications that use HTTP are always in scope for Directorate reviews. The Directorate might also review similar documents outside the IETF stream upon request -- e.g., from the ISE, W3C, or similar.
+- Assure that the proposal is deployable with existing HTTP implementations and infrastructure
+- Highlight ways that the proposal might be able to reuse existing HTTP functionality (e.g., caching, content negotiation)
+- Work with the authors to assure that best current practices are followed
+- Verify that it does not limit the extension or evolution of the HTTP protocol
+
+## How to Engage with the HTTP Directorate
+
+**We encourage early reviews** of documents that use HTTP, since it is often easier to adjust them at that point. Late reviews may result in the need to make significant changes in the final stages of the process.
+
+Authors of documents that use HTTP are encouraged to be familiar with:
+
+* [Building Protocols with HTTP](https://httpwg.org/specs/rfc9205.html) (BCP 56)
+* The [HTTP Editorial Style Guide](https://httpwg.org/admin/editors/style-guide)
+* [Structured Field Values](https://httpwg.org/specs/rfc8941.html) (when defining header or trailer fields)
+
+Working Group chairs can request reviews by the directorate. Additionally, you can send e-mail to the [HTTP mailing list](https://lists.w3.org/Archives/Public/ietf-http-wg/) to request broader community feedback.[^1] 
+
+We encourage re-reviews of the document when substantial changes take place, and during Last Call.
+
+See also our [guidelines for reviewers](guidelines).
+
+## Extending HTTP
+
+Documents that use the generic extension points of HTTP (e.g., new methods, new status codes, new content codings) need to coordinate with the [HTTP Working Group](https://httpwg.org/) for review; generally, these extensions are defined either within the HTTP Working Group, or a new Working Group chartered explicitly to do so. New generic extensions should not be defined in application-specific documents.
 
 
-## Review Topics
 
-In general, your review should cover at least:
+[^1]: Note that you need to be subscribed to this list to post to it.
 
-* If the draft specifies an application that uses HTTP (e.g., a "HTTP API"), how well does it fit with the advice in [Building Protocols with HTTP](https://httpwg.org/specs/rfc9205.html)? This document is a BCP, and so should be followed. However, note that there are few hard requirements in it.
-
-* Do extensions conform to the appropriate advice in [HTTP Semantics](https://httpwg.org/specs/rfc9110.html#extending)? Have they been discussed with a wider community than just the application at hand, if they're generic (e.g., a method or status code)?
-
-* Do HTTP header and trailer fields use [Structured Fields](https://httpwg.org/specs/rfc8941.html)? There are sometimes good reasons not to use them, but often they're not used because authors aren't aware of them early in the drafting process.
-
-* Does the draft conform to the conventions in the [HTTP Editor Style Guide](https://httpwg.org/admin/editors/style-guide)? When documents specifying HTTP-related things use similar conventions and terminology, it improves readability and aids understanding.
-
-* Does the document refer to HTTP correctly?
-
-When writing your review, it's important to distinguish between stylistic / aesthetic suggestions and issues that will harm interoperability or security. Not all of the uses of HTTP in the IETF will be "pretty", and we can try to gently improve those cases, but we need to reserve more insistent feedback for practices that will actually break something.
 
