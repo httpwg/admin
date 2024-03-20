@@ -2,7 +2,7 @@
 
 _Nearby: [reviewer guidelines](guidelines)_
 
-The HTTP Directorate reviews documents proposed for publication in the RFC Series with a focus on how the HTTP protocol is used.
+The [HTTP Directorate](https://datatracker.ietf.org/group/httpdir/about/) reviews documents proposed for publication in the RFC Series with a focus on how the HTTP protocol is used.
 
 Its reviewers aim to:
 
