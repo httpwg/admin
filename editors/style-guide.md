@@ -2,13 +2,16 @@
 
 # HTTP Editorial Style Guide
 
-This page collects guidance for HTTP specification editors, to promote consistency and ease of use for the document set. See also the [RFC Editor style guide](https://www.rfc-editor.org/styleguide/).
+This page collects guidance for HTTP specification editors, to promote consistency and ease of use for the document set. **HTTP WG document editors should follow these guidelines** and reference this document when asked by the RFC Editor Production Center.
 
-**NOTE**: This guide is still in development; discuss improvements to it on the [issues list](https://github.com/httpwg/admin/labels/style-guide).
+See also the [RFC Editor style guide](https://www.rfc-editor.org/styleguide/).
+
+**NOTE**: This guide is always being improved; discuss improvements to it on the [issues list](https://github.com/httpwg/admin/labels/style-guide).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Terminology](#terminology)
 - [Header and Trailer Fields](#header-and-trailer-fields)
   - [Structured Fields](#structured-fields)
 - [Content](#content)
@@ -22,6 +25,15 @@ This page collects guidance for HTTP specification editors, to promote consisten
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
+## Terminology
+
+Terminology should always be consistent with the core documents:
+
+* [RFC 9110](https://httpwg.org/specs/rfc9110.html) - HTTP Semantics
+* [RFC 9111](https://httpwg.org/specs/rfc9111.html) - HTTP Caching
+* [RFC 9112](https://httpwg.org/specs/rfc9112.html) - HTTP/1.1
+* [RFC 9113](https://httpwg.org/specs/rfc9113.html) - HTTP/2
 
 ## Header and Trailer Fields
 
