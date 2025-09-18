@@ -71,6 +71,23 @@ All references to structured types should be made to [Section 3](https://httpwg.
 Although ABNF is defined for structured types, we do not recommend its use.
 
 
+## Naming
+
+By convention, fields use title case, with words separated by hyphens, in text and examples. e.g.,
+
+> generate a Content-Encoding header field that lists \[...]
+
+While HTTP/2 and HTTP/3 require that fields only include lowercase characters and HTTP/1.1 is case insensitive, specifications use this convention to signal that the text is in reference to a field.
+
+[Tokens](https://httpwg.org/specs/rfc9651.html#token), [dictionary](https://httpwg.org/specs/rfc9651.html#dictionary) keys, and [parameter names](https://httpwg.org/specs/rfc9651.html#param) use lowercase in all contexts, with words separated by hyphens. e.g., `Want-Repr-Digest: sha-256=3, sha=10`.
+
+Structured fields do not permit the use of uppercase characters. Be aware that some fields, such as Cache-Control, define case insensitive handling for their tokens. Those fields use [the ABNF definition of token](https://httpwg.org/specs/rfc9110.html#tokens), which allows uppercase characters. Use lowercase characters when identifying these tokens unless the field is defined to be case sensitive (something that should be avoided, as there are presently no examples).
+
+RFC 9651 [recommends](https://httpwg.org/specs/rfc9651.html#rfc.section.3.3.4.p.5) the use of [strings](https://httpwg.org/specs/rfc9651.html#string) rather than tokens.  Strings have no similar conventions.
+
+By convention, all method names use uppercase characters.  Methods are case sensitive, but [some systems](https://fetch.spec.whatwg.org/#methods) translate lowercase characters into uppercase, so lowercase characters should be avoided.
+
+
 ## Content
 
 Use 'content', not 'body' or 'payload'.
